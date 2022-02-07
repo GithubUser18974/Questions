@@ -25,4 +25,11 @@ Pixel shader is a script that runs for each fragment (pixel candidate to be rend
 No. Texture and Meshes are examples of elements stored in GPU memory and Unity doesn’t allow other threads, besides the main one, to make modifications on these kinds of data.
 # Can threads be used to move a GameObject on the scene?
 No. Fetching the Transform reference isn’t thread safe in Unity.
+# What is Coroutine,is it running on new thread ?
+Coroutine methods can be executed piece by piece over time, but all processes are still done by a single main Thread. If a Coroutine attempts to execute time-consuming operation, the whole application freezes for the time being.
 
+Threads are different. The execution of separate Threads is managed by the operating system (this actually depends on the .NET implementation). If you have more than one logical CPU, many threads are executed on different CPUs. Thanks to that, any expensive operation will not freeze your game, but it might slow it down a little.
+# What is the differnce between Stack and Heap 
+https://www.c-sharpcorner.com/article/stack-vs-heap-memory-c-sharp/
+# Does C# support multiple inheritance ?
+C# does not support multiple class inheritance. To overcome this problem we use interfaces to achieve multiple class inheritance.
