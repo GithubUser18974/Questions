@@ -15,3 +15,16 @@ If you want to change a value from A to B in 1.0 seconds you can’t simply incr
 The way to correct this is to measure the time taken from frame X to X+1 and increment A, leveraging this change with the frame duration deltaTime by doing A += (B-A) * DeltaTime.
 
 When the accumulated DeltaTime reaches 1.0 second, A will have assumed B value
+
+# Consider the following code snippet below:
+
+# class Mover : MonoBehaviour
+# {
+#  Vector3 target;
+#  float speed;
+#
+# void Update()
+#  {
+#  
+#  }
+# }
