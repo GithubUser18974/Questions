@@ -19,3 +19,18 @@ When the accumulated DeltaTime reaches 1.0 second, A will have assumed B value
 # Can two GameObjects, each with only an SphereCollider, both set as trigger and raise OnTrigger events? Explain your answer.
 No. Collision events between two objects can only be raised when one of them has a RigidBody attached to it. This is a common error when implementing applications that use “physics.”
 # __________________________________________________________________
+# What is sessions per User?
+The average number of sessions per person playing on a given day.
+Also known as Average Number of Sessions per DAU.
+# __________________________________________________________________
+# Explain what a vertex shader is, and what a pixel shader is ?
+Vertex shader is a script that runs for each vertex of the mesh, allowing the developer to apply transformation matrixes, and other operations, in order to control where this vertex is in the 3D space, and how it will be projected on the screen.
+
+Pixel shader is a script that runs for each fragment (pixel candidate to be rendered) after three vertexes are processed in a mesh’s triangle. The developer can use information like the UV / TextureCoords and sample textures in order to control the final color that will be rendered on scree
+# __________________________________________________________________
+# Can threads be used to modify a Texture on runtime?
+No. Texture and Meshes are examples of elements stored in GPU memory and Unity doesn’t allow other threads, besides the main one, to make modifications on these kinds of data.
+# __________________________________________________________________
+# Can threads be used to move a GameObject on the scene?
+No. Fetching the Transform reference isn’t thread safe in Unity.
+
