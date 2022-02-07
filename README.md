@@ -33,3 +33,15 @@ Threads are different. The execution of separate Threads is managed by the opera
 https://www.c-sharpcorner.com/article/stack-vs-heap-memory-c-sharp/
 # Does C# support multiple inheritance ?
 C# does not support multiple class inheritance. To overcome this problem we use interfaces to achieve multiple class inheritance.
+
+# Difference between static class and singleton pattern?
+ singleton allows a class for which there is just one, persistent instance across the lifetime of an application. That means, it created a single instance and that instance (reference to that instance) can be passed as a parameter to other methods, and treated as a normal object. While a static class allows only static methods and and you cannot pass static class as parameter.
+A Singleton can implement interfaces, inherit from other classes and allow inheritance. While a static class cannot inherit their instance members. So Singleton is more flexible than static classes and can maintain state.
+Singleton Objects stored on heap while static class stored in stack.
+Singleton Objects can have constructor while Static Class cannot.
+Singleton Objects can dispose but not static class.
+Singleton Objects can clone but not with static cla
+# What is abstract class in C# unity?
+Abstract classes are a combination of both a normal class and an interface. A normal method cannot handle an abstract method and Interfaces are incapable of using constructors, encapsulation, member variables, and method definitions. But the abstract class is capable of doing what both of these classes cannot do.
+# What is Serialization and De-Serialization
+Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. ... So, the object serialized on one platform can be deserialized on a different platform
