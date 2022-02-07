@@ -16,13 +16,6 @@ The way to correct this is to measure the time taken from frame X to X+1 and inc
 
 When the accumulated DeltaTime reaches 1.0 second, A will have assumed B value
 # _______________________________________________________________________________________________________________________
-# Consider the following code snippet below:
- class Mover : MonoBehaviour
- {
-  Vector3 target;
-  float speed;
-
- void Update()
- {
-    }
-}
+# Can two GameObjects, each with only an SphereCollider, both set as trigger and raise OnTrigger events? Explain your answer.
+No. Collision events between two objects can only be raised when one of them has a RigidBody attached to it. This is a common error when implementing applications that use “physics.”
+# _______________________________________________________________________________________________________________________
