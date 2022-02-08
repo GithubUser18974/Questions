@@ -45,3 +45,7 @@ Singleton Objects can clone but not with static cla
 Abstract classes are a combination of both a normal class and an interface. A normal method cannot handle an abstract method and Interfaces are incapable of using constructors, encapsulation, member variables, and method definitions. But the abstract class is capable of doing what both of these classes cannot do.
 # What is Serialization and De-Serialization
 Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. ... So, the object serialized on one platform can be deserialized on a different platform
+# What is Batching and what is the use of Batching?
+Draw call batching is a draw call optimization method that combines meshes so that Unity can render them in fewer draw calls. Unity provides two built-in draw call batching methods:
+Static batching: For static GameObjects Unity combines them and renders them together.
+Dynamic batching: For small enough meshes, this transforms their vertices on the CPU, groups similar vertices together, and renders them in one draw call.
