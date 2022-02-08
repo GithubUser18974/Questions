@@ -49,3 +49,9 @@ Serialization is a mechanism of converting the state of an object into a byte st
 Draw call batching is a draw call optimization method that combines meshes so that Unity can render them in fewer draw calls. Unity provides two built-in draw call batching methods:
 Static batching: For static GameObjects Unity combines them and renders them together.
 Dynamic batching: For small enough meshes, this transforms their vertices on the CPU, groups similar vertices together, and renders them in one draw call.
+# Difference between Destroy and DestroyImmediate unity function ?
+Destroy() will set the object to null at the end of the frame and whereas DestroyImmediate() function immediately set object reference to null. Use DestroyImmediate with caution, according to the docs you're supposed to avoid using DestroyImmediate
+#  Is this possible to collide two mesh collider,if yes then How?
+Yes when we mark one of them as Convex
+# What is the use of Occlusion Culling?
+Occlusion culling removes additional objects from within the camera rendering work if they are entirely obscured by nearer objects. The occlusion culling process will go through the scene using a virtual camera to build a hierarchy of potentially visible sets of objects.
